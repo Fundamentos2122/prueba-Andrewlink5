@@ -1,0 +1,17 @@
+*{
+    font-family: cursive;
+}
+
+p{
+    color:rgb(109, 138, 199);
+}
+
+#p1{
+    color: rgb(163, 36, 76);
+    text-align: justify;
+}
+
+
+.border{
+    border: 2px solid black;
+}
