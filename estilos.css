@@ -1,5 +1,5 @@
 *{
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p{
@@ -14,4 +14,34 @@ p{
 
 .border{
     border: 2px solid black;
+}
+/* Elemento que contenga el atributo */
+[attr1]{
+    font-family:cursive;
+}
+/* El valor del atributo debe ser completamente igual*/
+[attr1="Parrafo-uno"]{
+    font-size: 20px;
+}
+/* Valor comienza con la cadena dada*/
+[attr1|="Parrafo"]{
+    font-weight: bold;
+}
+/*El valor comienza con los caracteres dados*/
+[attr1^="Pa"]{
+    color: coral;
+}
+
+/*El valor termina con los caracteres dados*/
+[attr1$="s"]{
+    margin-left: 30px;
+}
+/* Valor contiene la cadena dada*/
+[attr1~="Parrafo"]{
+    border: 1px solid black;
+}
+
+/* Valor contiene los caracteres dada*/
+[attr1*="u"]{
+    text-transform: uppercase;
 }
