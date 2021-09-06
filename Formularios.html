@@ -5,6 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        [name="conditions"]:checked{
+            margin-left: 50px;
+        }
+
+        input:focus{
+            box-shadow: 2px 2px 20px red;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+        #fake{
+            border:1px solid darkgray;
+            border-radius: 2px;
+        }
+
+        #fake:hover{
+            cursor: pointer;
+        }
+
+        #paux::first-letter{
+            text-transform: uppercase;
+            font-size: 50px;
+        }
+
+        #paux::first-line{
+            color: darkred;
+        }
+
+        #paux::selection{
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
     <form >
@@ -51,6 +86,10 @@
         <br><br>
         <input type="submit" value="Enviar">
         <button type="button">Guardar</button>
+        <br><br>
+        <div id="fake">presiona aqui</div>
+
+        <p id="paux">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nesciunt, tenetur, veritatis voluptates, error vel est illum pariatur quibusdam cupiditate ad possimus. Quis similique eveniet aliquid ipsa adipisci voluptatem magni?</p>
     </form>
 </body>
 </html>
